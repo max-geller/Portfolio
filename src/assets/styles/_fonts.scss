@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:ital,wght@0,100;0,300;0,350;0,400;0,500;0,600;0,650;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15.5px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-weight: 350;
+}
+
+h5 {
+}
+.mat-nav-list {
+  .mat-list-item {
+    font-size: 13px !important;
+    font-weight: 650;
+  }
+  :hover {
+    color: rgb(19, 199, 19);
+  }
+}
+
+mat-divider {
+  color: rgb(227, 230, 230);
+  margin-bottom: 8px !important;
+}
