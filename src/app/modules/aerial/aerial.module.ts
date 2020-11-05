@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AerialRoutingModule } from './aerial-routing.module';
-import { ArtComponent } from './art/art.component';
+import { ArtComponent } from './pages/art/art.component';
+import { OverviewComponent } from './pages/overview/overview.component';
+import { GoalsComponent } from './pages/goals/goals.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
-  declarations: [ArtComponent],
+  declarations: [ArtComponent, OverviewComponent, GoalsComponent],
   imports: [
     CommonModule,
+    SharedModule,
     AerialRoutingModule
   ]
 })

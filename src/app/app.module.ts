@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BioComponent } from './pages/bio/bio.component';
@@ -27,6 +27,11 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { QaComponent } from './components/qa/qa.component';
+import { BhagsComponent } from './components/bhags/bhags.component';
+import { AccomplishmentsComponent } from './components/accomplishments/accomplishments.component';
+import { CertsComponent } from './components/certs/certs.component';
+import { AwardsComponent } from './components/awards/awards.component';
+import { PublicationsComponent } from './components/publications/publications.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,12 @@ import { QaComponent } from './components/qa/qa.component';
     NewsFeedComponent,
     AboutComponent,
     GalleryComponent,
-    QaComponent
+    QaComponent,
+    BhagsComponent,
+    AccomplishmentsComponent,
+    CertsComponent,
+    AwardsComponent,
+    PublicationsComponent
   ],
   imports: [
     BrowserModule,

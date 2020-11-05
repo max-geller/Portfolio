@@ -1,0 +1,14 @@
+.module-container {
+  display: flex;
+  flex-direction: row;
+
+  .mat-card {
+    margin:3px;
+    border: black;
+    border-style: solid;
+    border-radius: 0;
+  }:hover {
+    background-color: rgb(255, 115, 0);
+    cursor: pointer;
+  }
+}

@@ -1,1 +1,23 @@
-<mat-toolbar class="navbar" color="primary">Max Geller</mat-toolbar>
+<mat-toolbar class="navbar" color="primary">
+  <div fxLayout="row" fxLayoutAlign="center center" fxFlex >
+    <div fxLayout="column"  fxFlex>
+      <mat-nav-list>
+        <mat-list-item routerLink="/home">
+          <h2
+            style="
+              margin-top: 0px;
+              margin-bottom: 0px;
+              padding-top: 0px;
+              padding-bottom: 0px;
+            "
+          >
+            MAX M. GELLER
+          </h2>
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+    <div class="icon-menu" fxLayout="column"  style="margin-top: 5px" fxLayoutAlign="center center" >
+      <button mat-icon-button><i class="fal fa-bars fa-2x"></i></button>
+    </div>
+  </div>
+</mat-toolbar>
