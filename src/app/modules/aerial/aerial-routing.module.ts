@@ -6,16 +6,32 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'overview',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'overview',
-    component: OverviewComponent
-  }
+    component: OverviewComponent,
+  },
+  {
+    path: 'overview',
+    component: OverviewComponent,
+  },
+  {
+    path: 'overview',
+    component: OverviewComponent,
+  },
+  {
+    path: 'overview',
+    component: OverviewComponent,
+  },
+  {
+    path: 'overview',
+    component: OverviewComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AerialRoutingModule { }
+export class AerialRoutingModule {}
