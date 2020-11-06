@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AerialComponent } from './modules/aerial/aerial.component';
 import { DevComponent } from './modules/dev/dev.component';
+import { EngineeringComponent } from './modules/engineering/engineering.component';
 import { BioComponent } from './pages/bio/bio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   {
     path: 'engineering',
     loadChildren: () => import('./modules/engineering/engineering.module').then(m => m.EngineeringModule),
+    component: EngineeringComponent
   },
   {
     path: 'dev',

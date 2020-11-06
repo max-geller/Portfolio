@@ -8,10 +8,14 @@ import { GoalsComponent } from './pages/goals/goals.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AerialComponent } from './aerial.component';
 import { RouterModule } from '@angular/router';
+import { ServicesComponent } from './pages/services/services.component';
+import { FleetComponent } from './pages/fleet/fleet.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { FpvComponent } from './pages/fpv/fpv.component';
 
 
 @NgModule({
-  declarations: [AerialComponent, ArtComponent, OverviewComponent, GoalsComponent],
+  declarations: [AerialComponent, ArtComponent, OverviewComponent, GoalsComponent, ServicesComponent, FleetComponent, GalleryComponent, FpvComponent],
   imports: [
     CommonModule,
     SharedModule,
