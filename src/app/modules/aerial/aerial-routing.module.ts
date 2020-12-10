@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CustomsComponent } from 'src/app/customs/customs.component';
+import { CustomsComponent } from 'src/app/modules/aerial/pages/customs/customs.component';
 import { StockComponent } from './pages/stock/stock.component';
 import { ArtComponent } from './pages/art/art.component';
 import { FleetComponent } from './pages/fleet/fleet.component';

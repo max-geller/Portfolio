@@ -11,6 +11,7 @@ import { FleetComponent } from './pages/fleet/fleet.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { FpvComponent } from './pages/fpv/fpv.component';
 import { StockComponent } from './pages/stock/stock.component';
+import { CustomsComponent } from './pages/customs/customs.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { StockComponent } from './pages/stock/stock.component';
     GalleryComponent,
     FpvComponent,
     StockComponent,
+    CustomsComponent
   ],
   imports: [CommonModule, SharedModule, RouterModule, AerialRoutingModule],
 })
