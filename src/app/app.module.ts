@@ -32,6 +32,8 @@ import { AccomplishmentsComponent } from './components/accomplishments/accomplis
 import { CertsComponent } from './components/certs/certs.component';
 import { AwardsComponent } from './components/awards/awards.component';
 import { PublicationsComponent } from './components/publications/publications.component';
+import { TrainingModule } from './modules/training/training.module';
+import { CustomsComponent } from './customs/customs.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,8 @@ import { PublicationsComponent } from './components/publications/publications.co
     AccomplishmentsComponent,
     CertsComponent,
     AwardsComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    CustomsComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,6 +72,7 @@ import { PublicationsComponent } from './components/publications/publications.co
     DevModule,
     AerialModule,
     EngineeringModule,
+    TrainingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

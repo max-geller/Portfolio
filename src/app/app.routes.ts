@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AerialComponent } from './modules/aerial/aerial.component';
 import { DevComponent } from './modules/dev/dev.component';
 import { EngineeringComponent } from './modules/engineering/engineering.component';
+import { TrainingComponent } from './modules/training/training.component';
 import { BioComponent } from './pages/bio/bio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -44,6 +45,11 @@ const routes: Routes = [
     path: 'aerial',
     loadChildren: () => import('./modules/aerial/aerial.module').then(m => m.AerialModule),
     component: AerialComponent
+  },
+  {
+    path: 'training',
+    loadChildren: () => import('./modules/training/training.module').then(m => m.TrainingModule),
+    component: TrainingComponent
   },
 ];
 
