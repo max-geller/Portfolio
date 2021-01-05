@@ -1,7 +1,6 @@
-@import '_page.scss';
-@import '_toolbar.scss';
-@import '_fonts.scss';
-@import './components/components.scss';
-
-html, body { height: 100%; }
-body { margin: 0; }
+@import "./components/components.scss";
+@import "_fonts.scss";
+@import "_page.scss";
+@import "_colors.scss";
+@import "_sidenav.scss";
+@import "_toolbar.scss";

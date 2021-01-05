@@ -33,6 +33,7 @@ import { CertsComponent } from './components/certs/certs.component';
 import { AwardsComponent } from './components/awards/awards.component';
 import { PublicationsComponent } from './components/publications/publications.component';
 import { TrainingModule } from './modules/training/training.module';
+import { GalleryModule } from './modules/gallery/gallery.module';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { TrainingModule } from './modules/training/training.module';
     DevModule,
     AerialModule,
     EngineeringModule,
-    TrainingModule
+    TrainingModule,
+    GalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

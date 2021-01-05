@@ -1,0 +1,16 @@
+@charset 'utf-8';
+@import '~@angular/material/theming';
+@include mat-core();
+
+@import "styles/theme.scss";
+
+
+// Create Main Theme Variable
+$theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+// Initialize Theme
+@include angular-material-theme($theme);
+
+html, body { height: 100%; }
+body { margin: 0; }
+

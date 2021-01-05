@@ -24,12 +24,20 @@ const routes: Routes = [
     component: BioComponent
   },
   {
+    path: 'resume',
+    component: ResumeComponent
+  },
+  {
     path: 'contact',
     component: ContactComponent
   },
   {
     path: 'resume',
     component: ResumeComponent
+  },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./modules/gallery/gallery.module').then(m => m.GalleryModule),
   },
   {
     path: 'engineering',
