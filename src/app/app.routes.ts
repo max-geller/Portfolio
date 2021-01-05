@@ -4,37 +4,18 @@ import { AerialComponent } from './modules/aerial/aerial.component';
 import { DevComponent } from './modules/dev/dev.component';
 import { EngineeringComponent } from './modules/engineering/engineering.component';
 import { TrainingComponent } from './modules/training/training.component';
-import { BioComponent } from './pages/bio/bio.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ResumeComponent } from './pages/resume/resume.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'home',
+    path: 'home',
+    redirectTo: '',
     pathMatch: 'full'
   },
   {
     path: 'home',
-    component: HomeComponent
+    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule),
   },
-  {
-    path: 'bio',
-    component: BioComponent
-  },
-  {
-    path: 'resume',
-    component: ResumeComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
-  },
-  {
-    path: 'resume',
-    component: ResumeComponent
-  },
+
   {
     path: 'gallery',
     loadChildren: () => import('./modules/gallery/gallery.module').then(m => m.GalleryModule),
